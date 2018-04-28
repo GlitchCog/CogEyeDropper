@@ -1,7 +1,7 @@
 # CogEyeDropper
 Color eye dropper hexadecimal heads up display
 
-[Download JAR](https://github.com/GlitchCog/CogEyeDropper/blob/master/jar/CogEyeDropper.jar)
+[Download JAR](https://github.com/GlitchCog/CogEyeDropper/blob/master/jar/CogEyeDropper.jar?raw=true)
 
 
 Ctrl+C: Copy
