@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="CogEyeDropper" basedir=".">
+
+    <target name="clean">
+        <delete dir="bin" />
+        <delete dir="jar" />
+    </target>
+
+    <target name="compile">
+        <mkdir dir="bin" />
+        <javac srcdir="src" destdir="bin" />
+    </target>
+
+    <target name="run" depends="compile">
+        <java fork="true" classname="com.glitchcog.ced.CogEyeDropper">
+            <classpath>
+                <pathelement location="bin"/>
+            </classpath>
+        </java>
+    </target>
+
+    <target name="jar" depends="compile">
+        <mkdir dir="jar" />
+        <jar destfile="jar/CogEyeDropper.jar" basedir="bin">
+            <manifest>
+                <attribute name="Main-Class" value="com.glitchcog.ced.CogEyeDropper" />
+            </manifest>
+        </jar>
+    </target>
+
+</project>
